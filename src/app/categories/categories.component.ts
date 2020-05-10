@@ -1,5 +1,6 @@
-import { CategoriesService } from './../categories.service';
 import { Component, OnInit } from '@angular/core';
+import { CategoryService } from '../services/category.service';
+
 
 @Component({
   selector: 'app-categories',
@@ -10,7 +11,7 @@ export class CategoriesComponent implements OnInit {
   title = "Categories List";
   categories;
 
-  constructor(service:CategoriesService)  {
+  constructor(service:CategoryService) { 
     this.categories = service.getCategories();
   }
 
@@ -22,4 +23,3 @@ export class CategoriesComponent implements OnInit {
   }
 
 }
-

@@ -1,4 +1,5 @@
-import { TrainingsService } from './trainings/trainings.service';
+import { CategoryService } from './services/category.service';
+import { TrainingService } from './services/training.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -17,7 +18,7 @@ import { CategoriesComponent } from './categories/categories.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [TrainingsService],
+  providers: [TrainingService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
