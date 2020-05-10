@@ -7,7 +7,7 @@ import { TrainingsService } from './trainings.service';
   styleUrls: ['./trainings.component.css']
 })
 export class TrainingsComponent implements OnInit {
-  title = "Training List"
+  title = "Trainings List"
   trainings;
 
   constructor(service:TrainingsService) { 
